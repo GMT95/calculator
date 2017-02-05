@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+<style>
+
+
+.btn:hover
+{
+
+background-color:#008CBA;
+
+
+
+}
+
+
+
+
+.btn
+{
+background-color: green;
+color: white;
+
+ font-size: 20px;
+ padding: 10px 15px;
+border-radius:8px
+
+
+}
+
+.txfl
+{
+background-color: #008CBA;
+color: white;
+
+font-size: 20px;
+padding: 10px 15px;
+border-radius:8px;
+width:4.9cm;
+
+
+}
+
+#equals
+{
+
+background-color:  #f44336;
+color: white;
+
+ font-size: 20px;
+ padding: 10px 15px;
+border-radius:8px
+
+
+
+
+}
+
+
+
+#equals:hover
+{
+
+background-color: #008CBA;
+
+}
+
+form
+{
+
+
+
+padding-top:20px;
+text-align: center;
+
+}
+
+
+</style>
+</head>
+
+<body>
+<form name="frm"> 
+
+<input type="text" name="tf" class="txfl">
+
+<br><input type="button" value="1" onClick="document.frm.tf.value += '1';" class="btn">
+
+<input type="button" value="2" onClick="document.frm.tf.value += '2';" class="btn">
+
+<input type="button" value="3" onClick="document.frm.tf.value += '3';" class="btn">
+
+<input type="button" value="4" onClick="document.frm.tf.value += '4';" class="btn">
+
+<br><input type="button" value="5" onClick="document.frm.tf.value += '5';" class="btn">
+
+<input type="button" value="6" onClick="document.frm.tf.value += '6';" class="btn">
+
+<input type="button" value="7" onClick="document.frm.tf.value += '7';" class="btn">
+
+<input type="button" value="8" onClick="document.frm.tf.value += '8';" class="btn">
+
+<br><input type="button" value="9" onClick="document.frm.tf.value += '9';" class="btn">
+
+<input type="button" value="0" onClick="document.frm.tf.value += '0';" class="btn">
+
+<input type="button" value="." onClick="document.frm.tf.value += '.';" class="btn">
+
+<input type="button" value="+" onClick="document.frm.tf.value += '+';" class="btn">
+
+<br><input type="button" value="-" onClick="document.frm.tf.value += '-';" class="btn">
+
+<input type="button" value="*" onClick="document.frm.tf.value += '*';" class="btn">
+
+<input type="button" value="/" onClick="document.frm.tf.value += '/';" class="btn">
+
+<input type="button" value="C" onClick="document.frm.tf.value= '';" class="btn">
+
+<br><input type="button" value="=" style="width:5.5cm;" onClick="document.frm.tf.value = eval(document.frm.tf.value);" id="equals">
+
+</form>
+
+
+</body>
+
+</html>
